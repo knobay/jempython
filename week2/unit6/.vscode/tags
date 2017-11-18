@@ -1,0 +1,52 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Cnum	../ex_06_M01.py	/^Cnum = (int(Fnum)-32)*(5\/9)$/;"	kind:variable	line:11
+Cnum	../ex_06_M01.py	/^Cnum = input("Please enter a number in Celcius:- ")$/;"	kind:variable	line:7
+Cnum	../ex_06_M01.py	/^Cnum=""$/;"	kind:variable	line:5
+Fnum	../ex_06_M01.py	/^Fnum = ((int(Cnum)*9)\/5)+32$/;"	kind:variable	line:8
+Fnum	../ex_06_M01.py	/^Fnum = input("Please enter a number in Fahrenheit:- ")$/;"	kind:variable	line:10
+a	../ex_06_easy.py	/^a = 3$/;"	kind:variable	line:8
+a	../temp.py	/^a = 3$/;"	kind:variable	line:11
+b	../ex_06_easy.py	/^b = 10$/;"	kind:variable	line:9
+b	../temp.py	/^b = 10$/;"	kind:variable	line:12
+c	../ex_06_easy.py	/^c = -2$/;"	kind:variable	line:10
+c	../temp.py	/^c = -2$/;"	kind:variable	line:13
+dayInSeconds	../ex_06_M02.py	/^dayInSeconds = 24*60*60$/;"	kind:variable	line:4
+daysSegment	../ex_06_M02.py	/^daysSegment = seconds\/\/dayInSeconds$/;"	kind:variable	line:10
+ex_06_M01.py	../ex_06_M01.py	1;"	kind:file	line:1
+ex_06_M02.py	../ex_06_M02.py	1;"	kind:file	line:1
+ex_06_easy.py	../ex_06_easy.py	1;"	kind:file	line:1
+funciton	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
+hourInSeconds	../ex_06_M02.py	/^hourInSeconds = 60*60$/;"	kind:variable	line:5
+hoursSegment	../ex_06_M02.py	/^hoursSegment = (seconds%dayInSeconds)\/\/hourInSeconds$/;"	kind:variable	line:11
+math	../ex_06_M01.py	/^import math$/;"	kind:namespace	line:1
+math	../ex_06_M02.py	/^import math$/;"	kind:namespace	line:2
+math	../ex_06_easy.py	/^import math$/;"	kind:namespace	line:1
+math	../temp.py	/^import math$/;"	kind:namespace	line:2
+math	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
+math	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
+math	../temp.py	/^print("power before import of math {}.".format(pow(2,3)))$/;"	kind:namespace	line:1
+of	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
+of	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
+of	../temp.py	/^print("power before import of math {}.".format(pow(2,3)))$/;"	kind:namespace	line:1
+old	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
+pow	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
+seconds	../ex_06_M02.py	/^seconds = int(secondsStr)$/;"	kind:variable	line:9
+secondsSegment	../ex_06_M02.py	/^secondsSegment = seconds%60$/;"	kind:variable	line:12
+secondsStr	../ex_06_M02.py	/^secondsStr = input("Please enter a huge number of seconds:- ")$/;"	kind:variable	line:8
+temp.py	../temp.py	1;"	kind:file	line:1
+the	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
+using	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
+using	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
+x	../ex_06_easy.py	/^x = 5$/;"	kind:variable	line:5
+x	../temp.py	/^x = 5$/;"	kind:variable	line:8
+y	../ex_06_easy.py	/^y = (6*(x**2)+(3*x)+2)$/;"	kind:variable	line:6
+y	../temp.py	/^y = (6*(x**2)+(3*x)+2)$/;"	kind:variable	line:9
+y1	../ex_06_easy.py	/^y1 = (((b*-1)+math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:11
+y1	../temp.py	/^y1 = (((b*-1)+math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:14
+y2	../ex_06_easy.py	/^y2 = (((b*-1)-math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:12
+y2	../temp.py	/^y2 = (((b*-1)-math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:15
