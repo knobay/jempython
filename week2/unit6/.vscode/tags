@@ -9,6 +9,8 @@ Cnum	../ex_06_M01.py	/^Cnum = input("Please enter a number in Celcius:- ")$/;"	k
 Cnum	../ex_06_M01.py	/^Cnum=""$/;"	kind:variable	line:5
 Fnum	../ex_06_M01.py	/^Fnum = ((int(Cnum)*9)\/5)+32$/;"	kind:variable	line:8
 Fnum	../ex_06_M01.py	/^Fnum = input("Please enter a number in Fahrenheit:- ")$/;"	kind:variable	line:10
+Str	../ex_08_E03.py	/^    Str = input("Please enter a single letter:- ")$/;"	kind:variable	line:7
+Str	../ex_08_M01.py	/^    Str = input("Please enter a year:- ")$/;"	kind:variable	line:7
 a	../ex_06_easy.py	/^a = 3$/;"	kind:variable	line:8
 a	../temp.py	/^a = 3$/;"	kind:variable	line:11
 b	../ex_06_easy.py	/^b = 10$/;"	kind:variable	line:9
@@ -16,37 +18,85 @@ b	../temp.py	/^b = 10$/;"	kind:variable	line:12
 c	../ex_06_easy.py	/^c = -2$/;"	kind:variable	line:10
 c	../temp.py	/^c = -2$/;"	kind:variable	line:13
 dayInSeconds	../ex_06_M02.py	/^dayInSeconds = 24*60*60$/;"	kind:variable	line:4
+dayInSeconds	../ex_06_M05.py	/^dayInSeconds = 24*60*60$/;"	kind:variable	line:4
 daysSegment	../ex_06_M02.py	/^daysSegment = seconds\/\/dayInSeconds$/;"	kind:variable	line:10
+ex_06_H01.py	../ex_06_H01.py	1;"	kind:file	line:1
 ex_06_M01.py	../ex_06_M01.py	1;"	kind:file	line:1
 ex_06_M02.py	../ex_06_M02.py	1;"	kind:file	line:1
+ex_06_M05.py	../ex_06_M05.py	1;"	kind:file	line:1
 ex_06_easy.py	../ex_06_easy.py	1;"	kind:file	line:1
+ex_08_E01.py	../ex_08_E01.py	1;"	kind:file	line:1
+ex_08_E02.py	../ex_08_E02.py	1;"	kind:file	line:1
+ex_08_E03.py	../ex_08_E03.py	1;"	kind:file	line:1
+ex_08_M01.py	../ex_08_M01.py	1;"	kind:file	line:1
 funciton	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
 hourInSeconds	../ex_06_M02.py	/^hourInSeconds = 60*60$/;"	kind:variable	line:5
+hourInSeconds	../ex_06_M05.py	/^hourInSeconds = 60*60$/;"	kind:variable	line:5
 hoursSegment	../ex_06_M02.py	/^hoursSegment = (seconds%dayInSeconds)\/\/hourInSeconds$/;"	kind:variable	line:11
+kmStr	../ex_06_M05.py	/^    kmStr = input("Please enter a distance in Kilometres:- ")$/;"	kind:variable	line:10
+kms	../ex_06_M05.py	/^        kms = float(kmStr)$/;"	kind:variable	line:15
+kms	../ex_06_M05.py	/^        kms = int(kmStr)$/;"	kind:variable	line:12
+kms	../ex_06_M05.py	/^kms = mls * 1.60934$/;"	kind:variable	line:32
+lgx	../ex_06_easy.py	/^lgx = math.log10(x)$/;"	kind:variable	line:16
+math	../ex_06_H01.py	/^import math$/;"	kind:namespace	line:2
 math	../ex_06_M01.py	/^import math$/;"	kind:namespace	line:1
 math	../ex_06_M02.py	/^import math$/;"	kind:namespace	line:2
+math	../ex_06_M05.py	/^import math$/;"	kind:namespace	line:2
 math	../ex_06_easy.py	/^import math$/;"	kind:namespace	line:1
+math	../ex_08_E01.py	/^import math$/;"	kind:namespace	line:1
+math	../ex_08_E02.py	/^import math$/;"	kind:namespace	line:1
+math	../ex_08_E03.py	/^import math$/;"	kind:namespace	line:1
+math	../ex_08_M01.py	/^import math$/;"	kind:namespace	line:1
 math	../temp.py	/^import math$/;"	kind:namespace	line:2
 math	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
 math	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
 math	../temp.py	/^print("power before import of math {}.".format(pow(2,3)))$/;"	kind:namespace	line:1
+miles	../ex_06_M05.py	/^miles = kms * 0.621371$/;"	kind:variable	line:19
+minutesSegment	../ex_06_M02.py	/^minutesSegment = (seconds%hourInSeconds)\/\/60$/;"	kind:variable	line:12
+mlStr	../ex_06_M05.py	/^    mlStr = input("Now enter a distance in Miles:- ")$/;"	kind:variable	line:23
+mls	../ex_06_M05.py	/^        mls = float(mlStr)$/;"	kind:variable	line:28
+mls	../ex_06_M05.py	/^        mls = int(mlStr)$/;"	kind:variable	line:25
+num	../ex_08_E01.py	/^        num = int(numStr)$/;"	kind:variable	line:12
+num	../ex_08_E01.py	/^        num = int(numStr)$/;"	kind:variable	line:9
+num	../ex_08_E02.py	/^        num = int(numStr)$/;"	kind:variable	line:12
+num	../ex_08_E02.py	/^        num = int(numStr)$/;"	kind:variable	line:9
+numStr	../ex_08_E01.py	/^    numStr = input("Please enter a whole number:- ")$/;"	kind:variable	line:7
+numStr	../ex_08_E02.py	/^    numStr = input("Please enter a whole number:- ")$/;"	kind:variable	line:7
 of	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
 of	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
 of	../temp.py	/^print("power before import of math {}.".format(pow(2,3)))$/;"	kind:namespace	line:1
 old	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
 pow	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
 seconds	../ex_06_M02.py	/^seconds = int(secondsStr)$/;"	kind:variable	line:9
-secondsSegment	../ex_06_M02.py	/^secondsSegment = seconds%60$/;"	kind:variable	line:12
+secondsSegment	../ex_06_M02.py	/^secondsSegment = seconds%60$/;"	kind:variable	line:13
 secondsStr	../ex_06_M02.py	/^secondsStr = input("Please enter a huge number of seconds:- ")$/;"	kind:variable	line:8
 temp.py	../temp.py	1;"	kind:file	line:1
 the	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
 using	../temp.py	/^print("power after import of math - using old pow {}.".format(pow(2,3)))$/;"	kind:namespace	line:4
 using	../temp.py	/^print("power after import of math - using the math funciton {}.".format(math.pow(2,3)))$/;"	kind:namespace	line:3
+x	../ex_06_H01.py	/^x = 0.3$/;"	kind:variable	line:4
+x	../ex_06_M05.py	/^x = True$/;"	kind:variable	line:21
+x	../ex_06_M05.py	/^x = True$/;"	kind:variable	line:8
+x	../ex_06_easy.py	/^x = 0.5$/;"	kind:variable	line:19
+x	../ex_06_easy.py	/^x = 10$/;"	kind:variable	line:22
+x	../ex_06_easy.py	/^x = 34$/;"	kind:variable	line:15
 x	../ex_06_easy.py	/^x = 5$/;"	kind:variable	line:5
+x	../ex_06_easy.py	/^x=0$/;"	kind:variable	line:26
+x	../ex_08_E01.py	/^x = True$/;"	kind:variable	line:5
+x	../ex_08_E02.py	/^x = True$/;"	kind:variable	line:5
+x	../ex_08_E03.py	/^x = True$/;"	kind:variable	line:5
+x	../ex_08_M01.py	/^x = True$/;"	kind:variable	line:5
 x	../temp.py	/^x = 5$/;"	kind:variable	line:8
+x1	../ex_06_easy.py	/^x1 = x\/3.6$/;"	kind:variable	line:23
+y	../ex_06_H01.py	/^y = 0.1 + 0.2$/;"	kind:variable	line:5
 y	../ex_06_easy.py	/^y = (6*(x**2)+(3*x)+2)$/;"	kind:variable	line:6
+y	../ex_06_easy.py	/^y = (math.asin(x)+math.acos(x))$/;"	kind:variable	line:27
+y	../ex_06_easy.py	/^y = (math.sin(x-math.pi)+math.cos(x+math.pi))**2$/;"	kind:variable	line:20
+y	../ex_06_easy.py	/^y = math.sqrt(math.sqrt(math.sqrt(x1)))$/;"	kind:variable	line:24
+y	../ex_06_easy.py	/^y = x*lgx$/;"	kind:variable	line:17
 y	../temp.py	/^y = (6*(x**2)+(3*x)+2)$/;"	kind:variable	line:9
 y1	../ex_06_easy.py	/^y1 = (((b*-1)+math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:11
 y1	../temp.py	/^y1 = (((b*-1)+math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:14
 y2	../ex_06_easy.py	/^y2 = (((b*-1)-math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:12
 y2	../temp.py	/^y2 = (((b*-1)-math.sqrt(b**2-(4*a*c)))\/(2*a))$/;"	kind:variable	line:15
+year	../ex_08_M01.py	/^year = int(Str)$/;"	kind:variable	line:12
