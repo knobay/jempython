@@ -7,12 +7,14 @@
 def odd_even():
     "Works out if a number is even or odd and then tells the user"
     userinput = input("Enter a number")
-    if int(userinput)%2 == 1:
-        result = 'odd'
+    if userinput.isdigit():
+        if int(userinput)%2 == 1:
+            result = 'odd'
+        else:
+            result = 'even'
+        print(result)
+        return
     else:
-        result = 'even'
-    print(result)
-    return
-
+        print("invalid input")
 # Now you can call printme function
 odd_even()
