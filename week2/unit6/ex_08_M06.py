@@ -16,6 +16,7 @@ while 1:
             charStruct = False
             break
         x += 1
+# next comment
     tempStr = numStr
     if not charStruct: print("1. I only accept three positive integers separated by spaces at the moment.")
     elif numStr.strip().count(" ") != 2: print("2. I only accept three positive integers separated by spaces at the moment.")
