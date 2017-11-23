@@ -4,6 +4,7 @@
 # Gets an input from the user works
 # out if even or odd and reports result
 
+# do the work in a function.  Essential for pylint to not get uppity.
 def odd_even():
     "Works out if a number is even or odd and then tells the user"
     userinput = input("Enter a number")
@@ -16,5 +17,5 @@ def odd_even():
         return
     else:
         print("invalid input")
-# Now you can call printme function
+# call the function
 odd_even()
