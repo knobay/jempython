@@ -43,19 +43,23 @@ def get_letter(used_letters):
     while already_used:
         i = True
         while i:
-            char = input('\nChoose your letter:- ').upper()
-            r_char = re.sub(r'[\W|\d]', '', char)
-            if r_char == '':
-                print('\tI reduced it to "{}" so I couldn\'t find a usable character, again?'.format(r_char))
-            elif len(r_char) > 1:
-                print('\tI reduced it to "{}" but I only want 1 character please..'.format(r_char))
-            elif len(r_char) == 1 and len(char) > 1:
-                print('\tI reduced it to "{}".'.format(r_char))
-                lett_ok = get_yn('\tShall I take that as your choice?')
-                if lett_ok == 'Y':
-                    break
+            try:
+                char = input('\nChoose your letter {^c to give up}:- ').upper()
+            except KeyboardInterrupt:
+                return used_letters.append('!')
             else:
-                break
+                r_char = re.sub(r'[\W|\d]', '', char)
+                if r_char == '':
+                    print('\tI reduced "{}" to "{}" so I couldn\'t find a usable character, again?'.format(char, r_char))
+                elif len(r_char) > 1:
+                    print('\tI reduced "{}" to "{}" but I only want 1 character please..'.format(char, r_char))
+                elif len(r_char) == 1 and len(char) > 1:
+                    print('\tI reduced "{}" to "{}".'.format(char, r_char))
+                    lett_ok = get_yn('\tShall I take that as your choice?')
+                    if lett_ok == 'Y':
+                        break
+                else:
+                    break
         already_used = False
         for j in used_letters[:]:
             if r_char == j:
@@ -94,16 +98,20 @@ def prepare_hangman(w_list, w_count):
     word = get_word(w_list, w_count)
     used_letters = []
     word_length = len(word)-1
+    gave_up = False
     game_lost = False
     found_flag = False
 #    for i in range(word_length):
 #        print('{} '.format(word[i]), end='')
     print('\nThe word is {} letters long.\n'.format(word_length))
-    while not game_lost and not found_flag:
+    while not game_lost and not found_flag and not gave_up:
         found_flag = check_word(word, word_length, used_letters, found_flag)
         if not found_flag:
             get_letter(used_letters)
-            print('You\'ve entered {} so far'.format(used_letters))
+            if used_letters[-1] == '!':
+                gave_up = True
+            else:
+                print('You\'ve entered {} so far'.format(used_letters))
         else:
             print('\n\n\nCongratulations you got the word!\t{}'.format(word))
             print('You got it in {} tries, the letters you tried were {}.'.format(len(used_letters), used_letters))
