@@ -21,3 +21,4 @@ translateMorse('SOS')
 
 str = input('What do you want to translate')
 translateMorse(str)
+

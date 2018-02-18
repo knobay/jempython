@@ -1,8 +1,3 @@
-
-#def printName():
-#  "To print my name"
-#  print('Jim Strachey')
-
 def printName(name):
     "To print the name passed in as a parameter"
     print('Hello ', name)
@@ -25,7 +20,5 @@ def main():
     height = float(input('Enter the height of the cuboid:- '))
     rectArea(length, width)
     cuboidVol(length, width, height)
-
-
 
 main()
