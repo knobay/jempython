@@ -25,7 +25,8 @@ def main():
     bmi = calculate_bmi(values)
     print("bmi is:", bmi)
 
-main()
-
+if __name__ == "__main__":
+    main()
+    
 
 
