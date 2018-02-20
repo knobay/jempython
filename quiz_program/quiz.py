@@ -1,0 +1,1 @@
+""" A quiz is a random selection of questions  of a particular length decided when created"""
