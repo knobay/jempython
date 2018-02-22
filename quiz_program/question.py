@@ -9,7 +9,7 @@ class Question:
         self.options = options
         self.answer_index = answer_index
 
-    def getQuestion(self):
+    def getQuestionText(self):
         "Returns the question text"
         return self.question_text
 
@@ -28,7 +28,7 @@ class Question:
 def main():
     print('generating test question')
     test_question = Question(123, 'What is the capital of Russia?', ['Tokyo', 'Sydney', 'Moscow', 'Amsterdam'], 2)
-    print(test_question.getQuestion(), '\nOptions are... ')
+    print(test_question.getQuestionText(), '\nOptions are... ')
 
     for item in test_question.options:
         print(item + '\n')
