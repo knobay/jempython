@@ -1,10 +1,10 @@
-""" A contestant has a name and a score  """
+"""A contestant has a name and a score"""
 
-class Contestant():
+class Contestant(object):
 
     score = 0
 
-    'Base class for all types of contestant'
+    'Returns a Contestant object with a score of zero when supplied a contestant name as string'
     def __init__(self, name):
         self.name = name
 

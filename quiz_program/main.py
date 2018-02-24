@@ -1,12 +1,12 @@
 """ The main program run at start up  """
 
-import quiz_master
+from library.game import Game
 
 def main():
-    myQuizMaster = quiz_master.QuizMaster()
-    myQuizMaster.ask()
+    thegame = Game()
+    thegame.play()
     print('Score...')
-    myQuizMaster.announceResults()
+    thegame.announceResults()
 
 if __name__ == "__main__":
     main()

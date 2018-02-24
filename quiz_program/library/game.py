@@ -1,25 +1,24 @@
 """Interacts with the user, ask them questions, 
-receive their answers, mark them, keep the score and give them 
-their results at the end of the exam"""
+receive their answers, marks the answers, keeps the score and gives them 
+their results at the end"""
 
+from library.quizsheet import Quizsheet
+from library.contestant import Contestant
 
-import quiz
-import contestant
-
-class QuizMaster():
-    'Base class for all types of QuizMaster'
+class Game(object):
+    'Returns a game object'
     def __init__(self):
-        self.quiz = quiz.Quiz()
-        self.contestant = contestant.Contestant(input('Enter your name\n> '))
+        self.quiz = Quizsheet()
+        self.contestant = Contestant(input('Enter your name\n> '))
         pass
 
-    def ask(self):
+    def play(self):
         for i in range(self.quiz.getNumberOfQuestions()):
             question = self.quiz.getQuestionByNumber(i).getQuestionText()
             print(question)
             print(self.quiz.getQuestionByNumber(i).getOptionsText())
             answer = int(input('> ')) - 1
-            if answer == self.quiz.getQuestionByNumber(i).answer_index:
+            if answer == self.quiz.getQuestionByNumber(i).getAnswer():
                 print('Correct.')
                 self.contestant.updateScore(1)
             else:
