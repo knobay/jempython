@@ -21,19 +21,13 @@ class Question:
         answer_text = self.options[self.answer_index]
         return answer_text
 
+    def getOptionsText(self):
+        text = ''
+        for i in range(len(self.options)):
+            text += '{0}) {1} \n'.format(str(i+1), self.options[i])
+
+        return text
+
     def getId(self):
-        "Returns the Id of the question"
+        "Returns the ID of the question"
         return self.qid
-
-def main():
-    print('generating test question')
-    test_question = Question(123, 'What is the capital of Russia?', ['Tokyo', 'Sydney', 'Moscow', 'Amsterdam'], 2)
-    print(test_question.getQuestionText(), '\nOptions are... ')
-
-    for item in test_question.options:
-        print(item + '\n')
-
-    print('correct answer is ', test_question.getAnswerText())
-
-if __name__ == "__main__":
-    main()

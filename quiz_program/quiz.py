@@ -1,31 +1,24 @@
-""" A quiz is a selection of numbered questions"""
+""" A quiz is a selection of numbered questions """
 
 import question
+import questionimporter
 
 class Quiz:
     'Base class for all types of quiz'
 
-    def __init__(self, questioncount):
-        self.quizsheet = []
-        self.questioncount = questioncount
-        for i in range(questioncount):
-            newquestion = question.Question(i, 'abc' + str(i), ['Tokyo', 'Sydney', 'Moscow', 'Amsterdam'], 2)
+    def __init__(self):
+        self.quizsheet = [] 
+        questionlist = questionimporter.QuestionImporter()
+        qs = questionlist.getQuestionData()
+        self.questioncount = len(qs)
+        for i in range(self.questioncount):
+            newquestion = question.Question(i, qs[i][0], [ qs[i][1], qs[i][2], qs[i][3], qs[i][4]], int(qs[i][5]))
             self.quizsheet.append(newquestion)
 
     def getQuestionByNumber(self, j):
-        "Returns the question text"
-        return self.quizsheet[j].getQuestionText()
+        "Returns a question"
+        return self.quizsheet[j]
 
-    def getAnswerByNumber(self, k):
-        "Returns the question text"
-        return self.quizsheet[k].getAnswerText()
- 
-def main():
-    print('generating test quiz')
-    test_quiz = Quiz(6)
-
-    print('question 2: ', test_quiz.getQuestionByNumber(2))
-    print('answer: ', test_quiz.getAnswerByNumber(2))
-
-if __name__ == "__main__":
-    main()
+    def getNumberOfQuestions(self):
+        "Returns the number of questions in the quiz"
+        return self.questioncount
