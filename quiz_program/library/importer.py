@@ -1,6 +1,7 @@
 "Reads in questions from an external source"
 
 import csv
+import random
 
 class Importer(object):
     'Returns QuestionImporter object'

@@ -3,10 +3,10 @@
 from library.game import Game
 
 def main():
-    thegame = Game()
+    contestant = input('Enter your name\n> ')
+    duration = input('How many questions per game do you want to play?\n> ')
+    thegame = Game(contestant, duration)
     thegame.play()
-    print('Score...')
-    thegame.announceResults()
 
 if __name__ == "__main__":
     main()

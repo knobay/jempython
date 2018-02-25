@@ -3,6 +3,7 @@ that can be returned using their index """
 
 from library.question import Question
 from library.importer import Importer
+import random
 
 class Quizsheet(object):
     'Returns a quizsheet object'
@@ -12,8 +13,9 @@ class Quizsheet(object):
         imported = Importer()
         self.questioncount = imported.getNumberImported()
         for i in range(imported.getNumberImported()):
-            newquestion = Question(i, imported.getCell(i,0), [ imported.getCell(i,1), imported.getCell(i,2), imported.getCell(i,3), imported.getCell(i,4)], int(imported.getCell(i,5)))
+            newquestion = Question(i, imported.getCell(i,0), [ imported.getCell(i,1), imported.getCell(i,2), imported.getCell(i,3), imported.getCell(i,4)])
             self.questionlist.append(newquestion)
+            random.shuffle(self.questionlist)
 
     def getQuestionByNumber(self, j):
         "Returns a question object when supplied a valid index"
