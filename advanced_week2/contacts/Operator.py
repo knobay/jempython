@@ -10,12 +10,11 @@ class Operator(object):
         print(chr(27) + "[2J") # clear screen
         print('(1) Add contact')
         print('(2) Find contact')
-        print('(q) Quit')
         print('Enter choice...\n')
 
         while choicemade == False:
             choice = input('> ')
-            if choice == '1' or choice =='2' or choice =='q':
+            if choice == '1' or choice =='2':
                 choicemade = True
             else:
                 choicemade = False
@@ -32,9 +31,6 @@ class Operator(object):
             num = self.directory.findContact(contactfname)
             print(num.getTelno())
             input('>') # pause
-
-        elif choice == 'q':
-            pass
 
         self.takeCall()
 
