@@ -1,5 +1,5 @@
 
-from Operator import Operator
+import Operator as op
 
-theoperator = Operator()
+theoperator = op.Operator()
 theoperator.takeCall()
