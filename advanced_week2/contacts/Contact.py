@@ -7,12 +7,13 @@ class Contact(object):
 
     def getTelno(self):
         return self.__telno
-	
+
     def getFirstname(self):
         return self.__firstname
 
     def getSecondname(self):
         return self.__secondname
+
 
 def test():
     testContact = Contact('Sienna', 'Miller', '0778282883')
@@ -21,4 +22,3 @@ def test():
 
 if __name__ == "__main__":
     test()
-
