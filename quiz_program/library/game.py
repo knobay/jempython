@@ -5,6 +5,7 @@ their results at the end"""
 from library.quizsheet import Quizsheet
 from library.contestant import Contestant
 
+
 class Game(object):
     'Returns a game object'
 
@@ -16,42 +17,41 @@ class Game(object):
 
     def play(self):
         for i in range(self.totalquestions):
-            question = self.quiz.getQuestionByNumber(i).getQuestionText()
-            
-            print(chr(27) + "[2J") # clear screen
-            
-            print(question)
-            print(self.quiz.getQuestionByNumber(i).getOptionsText())
- 
+            thisquestion = self.quiz.getQuestionByNumber(i)
+
+            print(chr(27) + "[2J")  # clear screen
+
+            print(thisquestion.getQuestionText())
+            print(thisquestion.getOptionsText())
+
+            'Get the users answer \
+            If the user does not want to quit, \
+            cast their answer as an integer and correct for zero based index.'
+
             answer = input('\n> ')
             if answer.upper() != 'Q':
                 try:
                     answer = int(answer) - 1
                 except:
-                    answer = 5
-                
-            print(chr(27) + "[2J") # clear screen
-           
-            if answer == self.quiz.getQuestionByNumber(i).getAnswer():
-                print('Correct.')             
+                    answer = None
+
+            print(chr(27) + "[2J")  # clear screen
+
+            if answer == thisquestion.getAnswer():
+                print('Correct.')          
                 self.contestant.updateScore(1)
                 input('\n>')
-            elif answer == 5: # exception raised above
-                print('Invalid input. The answer is {0}. '.format(self.quiz.getQuestionByNumber(i).getAnswerText()))
+            elif answer:
+                print('Sorry {0} that is incorrect. The answer is {1}. '.format(self.contestant.getName(), thisquestion.getAnswerText()))
                 input('\n>')
             else:
-                print('Sorry {0} that is wrong. The answer is {1}. '.format(self.contestant.getName(),self.quiz.getQuestionByNumber(i).getAnswerText()))
+                print('Invalid input. The answer is {0}. '.format(thisquestion.getAnswerText()))
                 input('\n>')
 
-        print(chr(27) + "[2J") # clear screen
-        
-        
-        print('{0}, you scored {1} out of {2}\n'.format(self.contestant.getName(),self.contestant.getScore(), self.totalquestions))
+        print(chr(27) + "[2J")  # clear screen
+
+        print('{0}, you scored {1} out of {2}\n'.format(self.contestant.getName(), self.contestant.getScore(), self.totalquestions))
         again = input('Play again? (Y) \n\nAny other key to quit\n\n> ')
         if again.upper() == 'Y':
             newgame = Game(self.contestant.getName(), self.totalquestions)
             newgame.play()
-            # self.contestant.updateScore(-self.contestant.getScore())
-            # self.quiz = Quizsheet()
-            # self.play()
-
