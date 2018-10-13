@@ -22,8 +22,8 @@ class Question(object):
         return self.questiontext
 
     def getAnswer(self):
-        "Returns the index of the answer as an integer"
-        return self.answer
+        "Returns the index of the answer as an integer corrected to start at 1"
+        return self.answer+1
 
     def getAnswerText(self):
         answertext = self.options[self.answer]
