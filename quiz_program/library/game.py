@@ -31,7 +31,7 @@ class Game(object):
             answer = input('\n> ')
             if answer.upper() != 'Q':
                 try:
-                    answer = int(answer) - 1
+                    answer = int(answer)
                 except:
                     answer = None
 
