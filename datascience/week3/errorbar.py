@@ -1,3 +1,7 @@
+""" 4. Error bars. /
+Using the following example data, please define a random error and plot the errorbar,/
+using nice aesthetics (something that looks decent to you)."""
+
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
