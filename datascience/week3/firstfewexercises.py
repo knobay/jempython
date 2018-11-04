@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib as mpl
-import matplotlib.pyplot as plt
+
+
 from sklearn.datasets import load_digits
 
-# %matplotlib inline
 plt.style.use('seaborn-talk')
 mpl.rcParams['figure.figsize'] = (12.5, 6.0)
 
@@ -38,7 +38,7 @@ plt.plot(mydata, np.tan(mydata))
 plt.title('$tan(x)$')
 
 
-
+plt.show()
 
 # 2. Plot on the same figure. (★★☆)
 # Create four plots in the same figure, for any four custom functions
@@ -56,33 +56,4 @@ ax2.flat[1].plot(data2, np.sin(data2),)
 ax2.flat[2].plot(data2, np.sin(data2),)
 ax2.flat[3].plot(data2, np.sin(data2),)
 
-
-
-# 3. Scatter plot. (★★☆)
-# Using the digits dataset from sklearn, plot four dimensions at random, in the same manner we did for the iris dataset.
-
-
-digits = load_digits()
-# print(digits['DESCR'])
-
-
-
-# print(digits.data.shape)
-
-# plt.gray()
-# plt.matshow(digits.images[0])
-# plt.matshow(digits.images[1])
-plt.matshow(digits.images[3])
-
-plt.show()
-
-
-#fig3, ax3 = plt.subplots(figsize=(14, 7))
-#ax3.scatter(digits[:, 0], digits[:, 1], alpha=0.5, s=256*digits[:, 3], c=digits.target, cmap='viridis', label='Size depicts {0}'.format(digits.feature_names[3]))
-#ax3.legend(frameon=True, borderpad=0.9)
-# ax3.set_xlabel(digits.feature_names[0])
-
-#print(digits.feature_names[0])
-# ax3.set_ylabel(digits.feature_names[1])
-
-# plt.show()
+# Exercise three makes no sense at all.
